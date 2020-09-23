@@ -18,6 +18,7 @@ Node* searchValInList(LinkedList* list, void* value) {
         if (node_get_data(actual) == value) {
             return actual;
         }
+        actual = node_get_next(actual);
     }
 
     return NULL;
